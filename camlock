@@ -1,0 +1,16 @@
+    getgenv().OldAimPart = "Head"
+    getgenv().AimPart = "HumanoidRootPart" -- For R15 Games: {UpperTorso, LowerTorso, HumanoidRootPart, Head} | For R6 Games: {Head, Torso, HumanoidRootPart}  
+    getgenv().AimlockKey = "q"
+    getgenv().AimRadius = 30 -- How far away from someones character you want to lock on at
+    getgenv().ThirdPerson = true 
+    getgenv().FirstPerson = true
+    getgenv().TeamCheck = false -- Check if Target is on your Team (True means it wont lock onto your teamates, false is vice versa) (Set it to false if there are no teams)
+    getgenv().PredictMovement = true -- Predicts if they are moving in fast velocity (like jumping) so the aimbot will go a bit faster to match their speed 
+    getgenv().PredictionVelocity = 30
+    getgenv().CheckIfJumped = true
+    getgenv().Smoothness = true
+    getgenv().SmoothnessAmount = 0.058
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/narvdoeslua/NewRepository/main/camlockSource", true))()
